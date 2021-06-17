@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="CSS/main.css" rel="stylesheet">
+    <script lang="javascript">
+        let show = true;
+        function toggleDisplay(){
+            show = !show;
+            document.getElementById("contact").style.display = (show) ? "block" : "none";
+        }
+    </script>
+</head>
+<body>
+    
+    <p>
+        <select>
+            <option>Ohio </option>
+            <option>Kentucky </option>
+            <option>Indiana</option>
+            
+        </select>
+    </p>
+
+    <button onclick=" toggleDisplay()">Show/Hide Contact Info</button>
+    <div id ="contact">
+    <h1 id="name">Name Here </h1>
+    <span> Address |</span>
+    <span>City |</span>
+    <span> State |</span>
+    <span> Phone |</span>
+    <span> Email |</span>
+    </div>
+    <hr>
+
+    <h3>Accomplishments</h3>
+
+    <ul>
+        <li> first bullet  </li>
+        <br>
+        <li> second bullet</li>
+        <br>
+        <li>third bullet </li>
+
+    </ul>
+    <hr>
+    <div>
+        <h3>Technology Overview</h3>
+    <table>
+        
+        <tr>
+            <td>Git </td> 
+            <td>GitHub </td> 
+            <td> C# </td>
+            <td>HTML </td>
+        </tr>
+        <tr>              
+            <td>CSS </td>
+            <td>jQuery </td>  
+            <td>WebAPI </td>
+            <td>Angular</td> 
+        </tr> 
+        <tr>    
+            <td>SQL Server</td>                
+            <td>Bootstrap </td>
+            <td>JavaScript </td>
+           <td>EntityFramework</td>
+          
+        </tr>   
+        </table>
+    </div> 
+    
+
+    <h3> Work Experience   </h3>
+    <h5> Total Quality Logistics</h5>
+
+    <span>LSS Support  |</span>
+    <span>02-2019 - 04-2019</span>
+    <br>
+    <span>Sales Assisstant I  |</span>
+    <span>04-2019 - 04-2020</span>
+    <br>
+    <span>Sales Assisstant II  | </span>
+    <span> 04-2020 - 06-2020</span>
+    <br>
+    <span>Learning and Development Cooridinator  |</span>
+    <span>06-2020 - 05-2021</span>
+        
+</body>
+</html>

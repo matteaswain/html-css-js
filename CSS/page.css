@@ -1,0 +1,14 @@
+body{
+   
+    background-color: rgba(105, 105, 105, 0.541);
+    
+}
+
+h1,h4{
+    color:limegreen;
+    scrollbar-highlight-color: purple;
+    text-decoration: underline;
+}
+
+
+

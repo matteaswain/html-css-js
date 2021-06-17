@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<div id ="contact">
+    <h1 id="name">Name Here </h1>
+    <span> Address |</span>
+    <span>City |</span>
+    <span> State |</span>
+    <span> Phone |</span>
+    <span> Email |</span>
+    </div>
+    <hr>
+    
+<style>
+* {
+  box-sizing: content-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 20%;
+  padding: 5px;
+  height: 200px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+<h2>Technology Overview</h2>
+
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2 style="text-align: center;">Back End</h2>
+    <ul>
+        <li>C#</li>
+        <li>Git </li>
+       
+        <li>GitHub</li>
+        <li>jQuery</li>
+        
+        <li>Sql Server</li>
+        <li>EntityFramework</li>
+    </ul>
+  </div>
+  <div class="column" style="background-color:rgb(112, 165, 214);">
+    <h2 style="text-align: center;">Front End</h2>
+    <ul>
+    <li>HTML</li>
+    <li>WebAPI</li>
+    <li>Angular</li>
+    <li>Bootstrap</li>
+    </ul>
+  </div>
+</div>
+
+</body>
+</html>

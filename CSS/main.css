@@ -1,0 +1,40 @@
+
+body{
+    font:normal normal normal 16pt/20pt Verdana, Tahoma, Arial, sans-serif;
+    background-color: darkgray;
+}
+/* setting the font for the body. Good practice to do*/
+
+table{
+    width:100%;
+}
+/* seeting the width of the tabel to the width of the page*/
+
+table,tr,td{
+    border: 1px solid white;
+    border-collapse:collapse;
+}
+/* set border size, type, color*/
+/* collapse allows for one line border look*/
+td{
+    width: 300px; 
+    text-align: center;
+}
+h3{
+    color: #0093d0;
+}
+
+#name{
+color: #0093d0; 
+font-style: italic;
+text-decoration: underline;
+font-size: 1.5rem;
+ text-align: center;}
+
+ #contact{
+     text-align: center;
+ }
+
+ .tql{
+     color: rgb(6, 4, 146)
+ }

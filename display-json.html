@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script lang="javascript">
+        let strings = ["Abe", "Bob", "Carol", "Darlene"];
+        let students = [
+
+        {name: "Sarah", city: "Tampa"}, 
+        {name: "John", city: "Tampa"},
+        {name: "Katelyn", city: "Cincinatti"},
+        {name: "Matt L.", city: "Cincinatti"},
+        {name: "Joda", city: "Columbus"},
+
+        ];
+        const clicked = () => { // creating the function click 
+            let tbodyCtrl = document.getElementById("tbody");// gives programmatic access to 
+            tbodyCtrl.innerHTML = ""; // setting html to clear
+            for(let student of students){
+                let tr = "<tr>"; 
+                tr += `<td>${student.name}</td>`;
+                tr += `<td>${student.city}</td>`;
+                tr += "</tr>";
+                tbodyCtrl.innerHTML += tr;
+            };
+            // let ulCtrl = document.getElementsByTagName("ul")[0]; 
+            // ulCtrl.innerHTML = ""; // clears the html out for lilst 
+            // for(let str of strings)
+            // { let liTag= `<li>${str}</li>`;
+            //     ulCtrl.innerHTML += liTag; 
+
+            // };
+        };
+
+    </script>
+</head>
+<body>
+    <button onclick="clicked()"> Click me</button>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>City</th>
+        
+            </tr>
+        </thead>
+        <tbody id="tbody">  </tbody>
+    </table>
+</body>
+</html>

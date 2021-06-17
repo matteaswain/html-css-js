@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script lang="javascript">
+    let counter = 0;
+    const add = () =>
+    {
+        counter++
+        display();
+    };
+
+    const sub = () =>
+    {
+        counter--
+        display();
+
+    };
+    const display = () =>
+{
+    let inpCtrl = document.getElementById("counter");
+    inpCtrl.value=counter;
+    inpCtrl.style.color = (counter % 2 == 0) ? "red" : "black";
+    inpCtrl.style.fontStyle = (counter % 3 == 0) ? "italic" : "normal";
+    inpCtrl.style.fontWeight = (counter % 7 == 0) ? "bold" : "normal";
+
+}
+
+</script>
+
+</head>
+<body>
+    
+    <button id="lftbtn" onclick="sub()">Sub(-)</button>
+
+    <input id="counter" type="number" value=0>
+    
+    <button id="rghtbtn" onclick="add()">Add(+) </button>
+
+
+</body>
+</html>

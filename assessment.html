@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="js/assessment-script.js"></script>
+</head>
+<body style="padding-top: 20px;">
+    <h2 style="text-align: center;"> BootCamp Assessments</h2>
+    <hr>
+    <div style="text-align: center;">
+        
+        <input id="name" type="text" placeholder="Name" width="60%" style="margin-right: 70px;">
+        <input id="grade" type="text" placeholder="Score" width="60%" style="margin-right: 70px;">
+        <label>Taken?</label>
+        <input id="taken" type="checkbox" placeholder="Taken?" style="margin-right: 70px;">
+
+        <button onclick="add()" class="btn btn-success">Submit</button>
+        
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th> Name</th>
+                <th>Score</th>
+                <th>Taken?</th>
+               
+            </tr>
+        </thead>
+        <tbody id="data"></tbody>
+    </table>
+    
+
+
+</body>
+</html>

@@ -42,7 +42,7 @@ const display = () =>
 
         let tdEmail = $(`<td> ${u.email} </td>`);
         tr.append(tdEmail); // url ? key value
-        tr.append($(`<a href="http://localhost3000/get-by-pk.html?id=${u.id}">Detail</a>`));
+        tr.append($(`<a href="http://localhost:5500/prs-ajax-detail.html?id=${u.id}">Detail</a>`));
         // a function makes a link 
         dataCtrl.append(tr);
     };
@@ -50,4 +50,3 @@ const display = () =>
 
 
 };
-

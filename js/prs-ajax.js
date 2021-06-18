@@ -20,7 +20,7 @@ $(() => // annoymous function
 
 const display = () =>
 {
-    let dataCtrl = $("#data")
+    let dataCtrl = $("#data")// gives control
     dataCtrl.val(users)
     for(let u of users)
     {
@@ -41,9 +41,13 @@ const display = () =>
         tr.append(tdPhone);
 
         let tdEmail = $(`<td> ${u.email} </td>`);
-        tr.append(tdEmail);
-
+        tr.append(tdEmail); // url ? key value
+        tr.append($(`<a href="http://localhost3000/get-by-pk.html?id=${u.id}">Detail</a>`));
+        // a function makes a link 
         dataCtrl.append(tr);
     };
+
+
+
 };
 

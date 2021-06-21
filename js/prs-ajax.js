@@ -42,7 +42,9 @@ const display = () =>
 
         let tdEmail = $(`<td> ${u.email} </td>`);
         tr.append(tdEmail); // url ? key value
-        tr.append($(`<a href="http://localhost:5500/prs-ajax-detail.html?id=${u.id}">Detail</a>`));
+        tr.append($(`<td><a href="http://localhost:5500/prs-ajax-detail.html?id=${u.id}">Detail</a>`+
+        ` | <a href="http://localhost:5500/prs-ajax-update.html?id=${u.id}">Update</a> ` +
+        ` | <a href="http://localhost:5500/prs-ajax-delete.html?id=${u.id}"> Delete</a></td>`))
         // a function makes a link 
         dataCtrl.append(tr);
     };

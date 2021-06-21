@@ -30,4 +30,4 @@ const display = () =>
     $("#xIsReviewer").text(user.isReviewer);
     $("#xIsAdmin").text(user.isAdmin);
    
-};$
+};

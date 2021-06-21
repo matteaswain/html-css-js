@@ -7,49 +7,53 @@
     <title>Document</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/getUrlParms.js"></script>
-    <script src="js/prs-ajax-detail.js"></script>
+    <script src="js/prs-ajax-update.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 </head>
 <body>
-    <table class="table table-sm" style="margin-top: 20px;">
-        <tr>
+    <table style="margin-top: 20px;">
+       <tr>
             <th>Id:</th>
-            <td id="xId"></td>
-        </tr>
+            <td><input id="xId" type="number" placeholder="Id" disabled></td>
+       </tr>
         <tr>
             <th>Username:</th>
-            <td id="xUsername"></td>
+            <td><input id="xUsername" type="text" placeholder="Username" disabled></td>
         </tr>
         <tr>
             <th>Password:</th>
-            <td id="xPassword"></td>
+            <td><input id="xPassword" type="text" placeholder="Password" disabled></td>
         </tr>
         <tr>
             <th>Firstname:</th>
-            <td id="xFirstname"></td>
+            <td><input id="xFirstname" type="text" placeholder="First Name" disabled></td>
         </tr>
         <tr>
             <th>Lastname:</th>
-            <td id="xLastname"></td>
+            <td><input id="xLastname" type="text" placeholder="Last Name" disabled></td>
         </tr>
         <tr>
             <th>Phone:</th>
-            <td id="xPhone"></td>
+            <td><input id="xPhone" type="text" placeholder="Phone" disabled></td>
         </tr>
         <tr>
             <th>Email:</th>
-            <td id="xEmail"></td>
+            <td><input id="xEmail" type="text" placeholder="Email" disabled></td>
         </tr>
         
         <tr>
             <th>Is Reviewer:</th>
-            <td id="xIsReviewer"></td>
+            <td><input id="xIsReviewer" type="checkbox" disabled></td>
         </tr>
         <tr>
             <th>Is Admin:</th>
-            <td id="xIsAdmin"></td>
+            <td><input id="xIsAdmin" type="checkbox" disabled></td>
         </tr>
     </table>
+    <br>
+    <button id="delete">Delete</button>
+    <br>
+    <br>
     <a href="prs-ajax.html">Go Back</a>
 </body>
 </html>

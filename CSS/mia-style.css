@@ -13,17 +13,20 @@ body {
     text-align: center;
 }
 
-#left, #right{
-    border: 1px dashed rgb(30, 131, 156);
+/* #left, #right{
+    border: 1px solid black;
     width: 30%;
     display: inline-block;
     vertical-align: top;
     min-height: 150px;
-}
-#boxes{
+    margin-top: 50px;
+} */
+/* #boxes{
     text-align: center;
-}
-h3{
+} */
+/* h3{
     text-decoration: underline;
     display: inline-block;
-}
+    color: rgb(30, 131, 156);
+    
+} */

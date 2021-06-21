@@ -11,7 +11,7 @@ $ (() =>
     {
         let newUser = 
         {
-            id:0,
+            id: 0,
             username: $("#xUsername").val(),
             password: $("#xPassword").val(),
             firstname: $("#xFirstname").val(),
@@ -29,7 +29,7 @@ $ (() =>
         console.debug(newUser);
         $.ajax({
             method: `POST`,
-            url: `http://localhost:30000/api/users`,
+            url: $`http://localhost:30000/api/users`,
             data: JSON.stringify(newUser),
             contentType: `application/json`
         })
